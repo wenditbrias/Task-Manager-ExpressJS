@@ -1,0 +1,16 @@
+<div class="task">
+  <% if(locals.task != null) { %> <% locals.task.map(item => { %>
+  <div class="task-item ">
+    <h4 class="task-title <%= item.complete == true ? "complete" : "" %>"><%= item.title %></h4>
+    <div class="actions">
+     <form method="post" action="/?_method=delete">
+         <input type="hidden" name="id" value="<%= item._id %>">
+           <button class="del-button" type="submit" ><i class="bx bxs-trash-alt"></i></button>
+     </form>
+     <a href="/<%= item._id %>">
+      <i class="bx bx-edit"></i>       
+     </a>
+    </div>
+  </div>
+  <% }) %> <% } %>
+</div>

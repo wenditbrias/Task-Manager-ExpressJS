@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.container-item {
+  width: 38%;
+  margin: 0 auto;
+}
+
+.container-item .forms {
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.container-item .forms > form {
+  width: 100%;
+  text-align: center;
+}
+
+.forms > form > input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: solid 1px rgba(85, 85, 85, 0.3);
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  margin: 24px 0 16px;
+}
+
+.forms > form > button {
+  color: white;
+  background-color: #ab46d2;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.container-item .task {
+  margin-top: 40px;
+}
+
+.container-item .task .task-item {
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  justify-content: space-between;
+}
+
+.task .task-item .actions i {
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-left: 4px;
+  color: #ab46d2;
+}
+
+.task-item .actions > form {
+  display: inline-block;
+}
+
+.actions > form .del-button {
+  all: unset;
+}
+
+.task .task-item .task-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.task .task-item .task-title.complete {
+  text-decoration: line-through;
+}
+
+.container-item .update {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 1.2rem 2rem;
+  border-radius: 12px;
+}
+
+.container-item .update .task-update-title {
+  text-align: center; 
+  font-size: 1.2rem;
+}
+
+.container-item .update .task-detail {
+  margin-top: 20px;
+}
+
+.update .task-detail h5 {
+  font-size:0.94rem;
+  margin: 10px 0;
+}
+
+.update .task-detail .form-control {
+  vertical-align: middle;
+}
+
+.task-detail .form-control input[type="checkbox"] {
+  margin-right: 6px;
+  vertical-align: middle;
+
+}
+
+.task-detail .form-control span {
+  font-size: 0.88rem;
+  font-weight: 600;
+  vertical-align: middle;
+
+}
+
+#btn-update {
+   color: white;
+  background-color: #ab46d2;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.alert {
+  width: 100%;
+  background-color: rgba(0,0,200,0.2);
+  padding: 0.6rem 1rem;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.alert a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
